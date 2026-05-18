@@ -1,8 +1,7 @@
 #Carlos Salgado
 # Student ID:5001363
 # date: 5/18/2026
-# Description: This program will ask the user to input a number and then it will print out the square of that number
-
+# Description: This program allows the user to input the names and grades of a number of students, calculates the average grade for each student, and determines the corresponding letter grade based on a standard grading scale. The program also includes reflection questions to evaluate the development process.
 
 #Function to calculate the average of list of grades
 def calculate_avg(grades):
