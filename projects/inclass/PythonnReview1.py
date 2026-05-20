@@ -48,13 +48,47 @@ for name, grades in students.items():
     print(f"{name}: Average = {avg:.2f}, Letter Grade = {letter_grade}")
 
 #Reflection Questions (answer as comments at the bottom of your program):
+
 #1. Which part of your program was the easiest to write, and why?    
 """The easiest part of the program to write was the function to calculate the average of the grades. This is because it is a simple mathematical operation that can be easily implemented using the built-in sum() and len() functions in Python."""
+
 #2. Which part was the most challenging, and how did you solve it?
 """The most challenging part of the program was the 2 for loops to get the name and grades for each student. This is because I had to make sure that the input was correctly stored in the students dictionary and that the average and letter grade were correctly calculated for each student. 
     I solved this by carefully planning out the structure of the program and testing it with different inputs to ensure that it worked correctly."""
+
 #3. Why did you choose a list to store grades?
 """I chose a list to store the grades because its a flexible data structure that allows easy storageand retrieval of multiple grades for each student."""
+
 #4. What is one improvement you would make if you had more time?
 """One improvement I would make if I had more time is to add error handling to the program to ensure that the user inputs valid data. 
     For example, I could add a try-except block to catch any ValueError exceptions that may occur when the user inputs a non-numeric value for the grades."""
+
+#5. One thing the AI solution did differently than mine was:
+"""The AI broke everything into separate functions like calculate_avg(),
+    get_letter_grade(), get_grade(), collect_student(), summarize(), and
+    print_report(). My version only had two functions and put most of the
+    logic directly in the main code."""
+
+#6. One part of my original code that I understand better now is:
+"""The two nested for loops. After comparing both versions I can see that
+    my loops are actually doing the same job, just without the extra safety checks.
+    It helped me see that the structure I wrote was correct, just missing error handling."""
+
+#7. One part of the AI code that I do NOT fully understand is:
+"""The way it uses separate functions like collect_student() and summarize()
+    to break everything into smaller pieces. I understand what each one does,
+    but I'm still not fully comfortable with why you would split it up that way
+    instead of just writing it all in one block like I did."""
+
+#8. If you were debugging this program, where would you start and why?
+"""I would start with the get_letter_grade() function because there is a bug
+    in my version. The grade_points dictionary is indented inside the function
+    but it never actually gets used or returned, so it does nothing. I would
+    also check that the elif for avg >= 50 returns 'F' correctly since any
+    grade below 60 should already be an F."""
+
+#9. After comparing both solutions, which approach would you keep and why?
+"""I would keep a mix of both. I would keep my simpler structure since it is
+    easier to read and follow, but I would add the input validation from the
+    AI version. My version breaks if the user types something wrong, and that
+    is a real problem. Everything else my version does just fine."""
