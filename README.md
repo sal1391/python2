@@ -4,17 +4,28 @@ This repository contains coursework and review materials for the Python 2 course
 
 ## Structure
 
-- `projects/inclass/` - Contains in-class exercises and review scripts.
-- `PythonnReview1.py` - Main review script (may be moved to the appropriate folder).
+Each exercise lives in its own folder containing its code, any data files, and a
+`screenshot.png` of the program running.
+
+```
+projects/inclass/
+  PythonnReview1/      - Student grade average + letter grade calculator
+  classes_objects/     - Pet class demo (class vs. object, class attributes)
+  concert_ticket/      - ConcertTicket class demo (methods, class attributes)
+  studentracker/       - Student tracker (screenshot only)
+extra_credit/
+  shopping_cart/       - Shopping list builder (code + sample output + screenshot)
+```
 
 ## Usage
 
-Clone the repository and run the Python scripts using your preferred Python environment.
+Clone the repository and run any script from its folder using your preferred
+Python environment.
 
 ```
 git clone https://github.com/sal1391/python2.git
 cd python2
-python projects/inclass/PythonnReview1.py
+python projects/inclass/PythonnReview1/PythonnReview1.py
 ```
 
 ## Purpose

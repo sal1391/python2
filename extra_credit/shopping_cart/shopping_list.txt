@@ -1,0 +1,15 @@
+----- Shopping List -----
+
+Item: apple
+Price: $3.45
+Category: Cheap
+
+Item: cream
+Price: $2.99
+Category: Cheap
+
+Item: milk
+Price: $3.0
+Category: Cheap
+
+Total Cost: $9.44
