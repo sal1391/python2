@@ -1,0 +1,68 @@
+===========================================
+RECURSION.PY - PROGRAM AND OUTPUT
+===========================================
+
+CODE:
+-----
+#Carlos Salgado
+# Student ID:5001363
+# date: 7/13/2026
+# Program Description: This program demonstrates recursion through
+#   countdown functions and a reverse spell function. Includes
+#   user input and fun messages/emojis.
+
+def magic_countdown(n):
+    """Challenge 1: Countdown with fun messages and emojis"""
+    if n == 0:  # Base case - stop when we reach 0
+        print("🚀 Blast Off! 🚀")
+        return
+    print(f"{n} 🎉 Get ready!")
+    magic_countdown(n - 1)  # Recursive case - call itself with n-1
+
+def reverse_spell(word, index=0):
+    """Challenge 3: Print a word in reverse, one character per line"""
+    if index == len(word):  # Base case - reached end of word
+        return
+    reverse_spell(word, index + 1)
+    print(word[index])
+
+def main():
+    print("Starting magic countdown...")
+    try:
+        start = int(input("Enter a starting number for countdown: "))
+        if start < 0:
+            print("Please enter a positive number!")
+            return
+        magic_countdown(start)
+    except ValueError:
+        print("Invalid input! Please enter a number.")
+        return
+    
+    print("\n--- Bonus: Reverse Spell ---")
+    word = input("Enter a word to spell backwards: ")
+    print(f"Spelling '{word}' in reverse:")
+    reverse_spell(word)
+
+if __name__ == "__main__":
+    main()
+
+OUTPUT:
+-------
+Starting magic countdown...
+Enter a starting number for countdown: 5
+5 🎉 Get ready!
+4 🎉 Get ready!
+3 🎉 Get ready!
+2 🎉 Get ready!
+1 🎉 Get ready!
+🚀 Blast Off! 🚀
+
+--- Bonus: Reverse Spell ---
+Enter a word to spell backwards: PYTHON
+Spelling 'PYTHON' in reverse:
+N
+O
+H
+T
+Y
+P
